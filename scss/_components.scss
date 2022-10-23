@@ -1,0 +1,14 @@
+@import "_fonts_and_colors";
+
+@mixin hover-for-black(){
+    &:hover{
+        transition: 0.7s;
+        color: $black;
+        background-color: $white;
+    }
+    &:active{
+        transition: 0.3s;
+        background-color: $yellow;
+
+    }
+}
