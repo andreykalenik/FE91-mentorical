@@ -482,8 +482,15 @@
   height: 11px;
   width: 1px;
   position: absolute;
-  bottom: -1px;
   background-color: #000000;
+}
+.header__menu::before {
+  bottom: -1px;
+  left: 0;
+}
+.header__menu::after {
+  bottom: -1px;
+  right: 0;
 }
 
 .footer {
