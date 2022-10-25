@@ -7,8 +7,78 @@
         background-color: $white;
     }
     &:active{
+        color: $black;
         transition: 0.3s;
         background-color: $yellow;
 
     }
 }
+@mixin hover-for-white(){
+    border: 1px solid transparent;
+    &:hover{
+        transition: 0.7s;
+        background-color: $yellow;
+        color: $black;
+        border: 1px solid $black;
+        
+    }
+    &:active{
+        transition: 0.3s;
+        background-color: $black;
+        color: $white;
+
+    }
+}
+
+.button{
+    font-size: 1rem;
+    border: 1px solid $black;
+    background-color: $white;
+    @include hover-for-white();
+    position: relative;
+    &:hover{
+     
+    }
+}
+
+.button--active{
+    border: 1px solid $black;
+    background-color: $yellow;
+}
+
+.shadow{
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    &::after{
+      content: "";
+      background-color: $white;
+      border: 1px solid $black;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      transition: 0.2s;
+    }
+    &:active:after {
+      top: 0px;
+      right: 0px;
+    }
+
+}
+
+.shadow--left{
+    &::after{
+      top: 5px;
+      right: 5px;
+    }
+}
+
+
+
+
+
+
+
