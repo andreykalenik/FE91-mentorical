@@ -28,9 +28,9 @@
  } 
 .header__menu{
     display: flex;
+    align-items: center;
     min-height: 97px;
     padding: 12px 0;
-    gap: 7px;
     border-bottom: 1px solid $black;
     position: relative;
     &::before,&::after{
@@ -55,7 +55,14 @@
         @include hover-for-white();
     }
 }
+.header__buttons{
+    justify-self: flex-end;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
 
+}
 .menu__item{
     padding: 15px 20px;
     width: 91px;
@@ -71,9 +78,7 @@
     display: flex;
     align-content: center;
     align-items: center;
-    justify-content: space-between;
-    // margin-left: 40px;
-    // margin-right: 40px;
+    justify-content: space-between;;
     padding-bottom: 20px;
 }
 .footer__logo-group{
