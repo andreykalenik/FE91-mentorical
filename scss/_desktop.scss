@@ -6,17 +6,16 @@
     padding: 0 calc(50% - 680px);
     margin: 0 40px;
 }
-
 .nav{
     margin: 0 auto;
-    font-size: 1 rem;
+    font-size: 1.6 rem;
         ul{
         display: flex;
         align-content: center;
         flex-wrap: wrap;
         }
         li{
-            padding: 1.72rem;
+            padding: 1.5rem 2.75rem;
         }
   }
 
@@ -68,7 +67,29 @@
     width: 91px;
     height: 49px;
 }
+.main-block{
+    padding-top: 165px;
+}
+.o-smile{
+    word-break: keep-all;
+    position: relative;
+    &::after{
+        position: absolute;
+        top: -17px;
+        left: 19px;
+    }
+}
 
+.o-smile--type1{
+    &::after{
+        content: url(/img/smile1.svg);
+    }
+}
+.o-smile--type2{
+    &::after{
+        content: url(/img/smile2.svg);
+    }
+}
 .footer{
     color: $white;
     
@@ -83,6 +104,9 @@
 }
 .footer__logo-group{
     font-size: 1.125rem;
+    img{
+        margin: 0 18px 18px 0;
+    }
     .footer__tel{
         margin: 7px 18px 7px 0;
     }

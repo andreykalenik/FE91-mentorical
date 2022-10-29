@@ -5,9 +5,7 @@ $darkgrey : #515151;
 $white : #FFFFFF; 
 $purple : #C091BE;
 
-*{
-  font-size: 16px;
-}
+
 
 @font-face {
   font-family: 'GT Walsheim Pro';
@@ -393,7 +391,30 @@ $purple : #C091BE;
   font-style: normal;
 }
 
-
+:root{
+  font-size: 10px;
+}
+*{
+    font-family: 'GT Walsheim Pro';
+    font-size: 1.6rem;
+    line-height: 120%;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+}
   
+h1, .o-smile {
+  font-family: 'GT Walsheim Pro';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 8rem;
+  text-transform: uppercase;
+}
+h1{
+  white-space: pre-line;
+  word-wrap: normal;
+}
 
+p{
+  font-size: 2rem;
+}
 
